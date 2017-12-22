@@ -1,0 +1,268 @@
+.map_container {
+
+	background: url(../images/donorWall.png) no-repeat 0px 0px;
+	/*background-size: 100% 100%;    doesn't cover whole page but only the whole container background image is contained within*/
+	/*900px about right for weebly*/
+	height: 483px;
+	margin-left: 20px;
+	width: 900px;
+	bottom: 0;
+	position: relative;
+	/* position relative because picks are going to use absolute positioning*/
+}
+
+.header-clear {
+	opacity: 0;
+	padding: 0;
+	margin: 0;
+	width: 30%;
+}
+
+.header-clear2 {
+  display: none;
+}
+
+/*CSS Rows*/
+/* Grid view css*/
+.colm-1 {width: 8.33%;}
+.colm-2 {width: 16.66%;}
+.colm-3 {width: 25%;}
+
+/*CSS for first level focus*/
+/**/
+.colm-1a {width: 30%;}
+.colm-2a {width: 28%;}
+.colm-3a {width: 24%;}
+.colm-4a {width: 18%;}
+
+.colm-5a {width: 27%;}
+.colm-6a {width: 36.3%;}
+.colm-7a {width: 36.7%;}
+
+.colm-8a {width: 25.5%;}
+.colm-9a {width: 38%;}
+.colm-10a {width: 36.5%;}
+
+.colm-11a {width: 32%;}
+.colm-12a {width: 37.5%;}
+.colm-13a {width: 30.5%;}
+/**/
+/**/
+.colm-1a-fir {width: 16%;}
+
+
+
+.colm-4 {width: 33.33%;}
+
+.colm-40p {width: 40%;}
+
+.colm-5 {width: 41.66%;}
+.colm-6 {width: 50%;}
+.colm-7 {width: 58.33%;}
+.colm-8 {width: 66.66%;}
+.colm-9 {width: 75%;}
+.colm-10 {width: 83.33%;}
+.colm-11 {width: 91.66%;}
+.colm-12 {width: 100%;}
+
+
+/* This universal selector for all col* even included in weebly css! that's why webpage apprears slightly off*/
+[class*="colm-"] {
+  float: left;
+  padding: 0;
+/*  border: 1px solid red;*/
+}
+
+
+
+
+.rowm::after {
+  content: "";
+  clear: both;
+  display: table;
+  /*display table needed to make content in a row be contained within row*/
+}
+/* End o CSS col styles*/
+
+
+.test {
+  z-index: 9999;
+  height: 130px;
+}
+.test-bottom {
+  height: 91px;
+}
+.test-mid-bottom {
+  height: 132px;
+}
+
+
+.test:hover {
+  background-color: #800020;
+  cursor: zoom-in;
+  opacity: 0.5;
+  border-radius: 5%;
+}
+
+
+.test:active {
+  background-color: #ffff00;
+  opacity: 0.5;
+  border-radius: 5%;
+}
+
+
+.focus {
+  background-color: #800020;
+  opacity: 0.5;
+  border-radius: 5%;
+}
+
+/* CSS for the individual boxes (popup)*/
+/*                                      */
+/*                                      */
+
+
+.wall_detail_container, .sec_detail{
+	box-sizing: border-box;
+	font-family: "Trebuchet MS", "Times New Roman"
+}
+
+.map_container .detail_container {
+
+	position: absolute;
+	top: 0;
+	padding: 0;
+	width: 900px;
+	height: 483px;
+
+}
+
+.map_container .sec_detail {
+
+	position: absolute;
+	top: 0px;
+	width: 900px;
+	height: 483px;
+	padding: 20px 5px 20px 5px;
+	color: #fff;
+	background-color: rgba(72, 96, 135, 0.85);
+}
+
+/* Initially want to hide our section popup as well, this is handled in the JS*/
+/* For the individual 13 boxes themselves, store all of the boxes in one big display:none div*/
+.wall_detail_container {
+	display: none;
+}
+
+
+/*Tooltip CSS*/
+.tooltip:hover, .tooltip:focus {
+	cursor: pointer;
+	color: rgb(43, 44, 68);
+}
+
+
+
+.tooltip {
+
+	color: rgb(88, 160, 91);
+	position: absolute;
+
+
+	left: 877px;
+	top: 0px;
+
+
+	font-weight: bold;
+	width: 17px;
+	margin: 0;
+
+	z-index: 9999999;
+	display: none;
+}
+
+
+.tooltip .tooltiptext {
+
+	width: 50px;
+	font-size: 1rem;
+	background-color: black;
+	color: white;
+	text-align: center;
+
+	opacity: 0;
+
+	border-radius: 10px;
+	visibility: hidden;
+	position: absolute;
+	z-index: 2000;
+
+	top: -13.5px;
+	right: -11px;
+
+	transition: opacity 2s;
+	-webkit-transition: opacity 2s;
+	-moz-transition: opacity 2s;
+}
+
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 0.5;
+}
+/*Tooltip CSS*/
+/**/
+
+/* CSS for indiivudal sec boxes*/
+/* CSS for indiivudal sec boxes*/
+/* CSS for indiivudal sec boxes*/
+
+/*sec-1A*/
+.sec1A-background {
+  background: url(../images/sec/sec1A-re.png) no-repeat 0px 0px;
+  /*background-size: 100% 100%;    doesn't cover whole page but only the whole container background image is contained within*/
+  /*900px about right for weebly*/
+  width: 900px;
+  height: 421px;
+  position: relative;
+  cursor: zoom-in;
+}
+
+.sec-fix {
+  position: absolute;
+  left: 0;
+}
+
+.test-sec {
+  z-index: 10000000;
+  height: 140px;
+}
+.test-sec:hover {
+  background-color: #800020;
+  opacity: 0.5;
+  border-radius: 5%;
+}
+
+
+.test-sec:active {
+  background-color: #ffff00;
+  opacity: 0.5;
+  border-radius: 5%;
+}
+/*sec1A*/
+
+
+
+
+
+
+
+/* CSS for indiivudal sec boxes*/
+/* CSS for indiivudal sec boxes*/
+/* CSS for indiivudal sec boxes*/
+
+
+/*                                      */
+/*                                      */
+/*                                      */
